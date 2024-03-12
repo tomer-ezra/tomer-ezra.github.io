@@ -1,0 +1,134 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+#bio {
+    text-align: left;
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1.5; /* Sets the line spacing to 1.5 */
+}
+
+.bio-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.bio-pic {
+    max-width: 200px; /* Adjust based on your preference */
+    margin-right: 20px; /* Space between image and contact details */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    height: 200px; /* Same as max-width for a perfect circle */
+    margin-top: 30px; /* Adds space above the picture */
+}
+.contact-details {
+    text-align: left;
+}
+
+.current-page {
+    text-decoration: underline;
+    /* Optionally, you can add other styles to highlight the current page link, such as changing its color */
+    color: #007bff; /* Example: Change the color to blue */
+}
+.service-content {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+    line-height: 1.6; /* Increase line spacing */
+}
+
+@media (max-width: 768px) {
+    .service-content {
+        width: 80%; /* Adjusts the width for smaller screens */
+    }
+}
+@media screen and (max-width: 600px) {
+    .bio-content {
+        flex-direction: column;
+    }
+    .bio-pic {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .contact-details, .bio-content p {
+        text-align: left;
+    }
+}
+
+.publications-content section {
+    margin-bottom: 30px; /* Adds space between sections */
+    padding: 15px; /* Adds space inside each section, around the content */
+    border-bottom: 1px solid #ccc; /* Optional: adds a bottom border for more separation */
+}
+
+.publications-content table {
+    width: 100%; /* Ensures tables use the full width of their container */
+    /* Additional table styling */
+}
+
+/* Optional: Style for the last section to remove the margin or border */
+.publications-content section:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+header, footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: #ddd;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+a {
+    color: #4fa;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #444;
+}
+
+tr:nth-child(even) {
+    background-color: #3a3a3a;
+}
+
+tr:nth-child(odd) {
+    background-color: #2a2a2a;
+}
+
+td a {
+    color: #4fa;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
