@@ -132,3 +132,7 @@ td a {
 td a:hover {
     text-decoration: underline;
 }
+
+b, strong {
+    color: #C8A2C8; /* Lilac color */
+}
