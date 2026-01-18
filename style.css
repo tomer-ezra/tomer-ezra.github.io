@@ -136,3 +136,29 @@ td a:hover {
 b, strong {
     color: #C8A2C8; /* Lilac color */
 }
+
+
+ul.news-list {
+  list-style: none;      /* no bullets */
+  margin: 0;
+  padding: 0;
+}
+
+.news-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.6em;  /* space between news items */
+}
+
+.news-date {
+  font-weight: bold;
+  font-family: monospace;  /* optional */
+  width: 11ch;             /* a bit wider so [May 2025] fits comfortably */
+  flex-shrink: 0;
+  margin-right: 0.75em;
+  white-space: nowrap;     /* <<< this keeps [May 2025] on one line */
+}
+
+.news-text {
+  line-height: 1.4;
+}
